@@ -1,0 +1,20 @@
+@import "@/styles/settings/__settings";
+
+.howtopay__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.howtopay__title {
+  font-size: $title;
+  color: $bgRedPrimary;
+  font-weight: 600;
+}
+
+.howtopay__desc {
+  font-size: $body;
+  font-weight: 300;
+  color: $bgGrey;
+}

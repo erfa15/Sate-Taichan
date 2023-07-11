@@ -1,0 +1,30 @@
+@import "@/styles/settings/__settings";
+
+.card_title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: $bgGrey;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  align-self: stretch;
+  color: $bgGrey;
+  &:hover {
+    color: white;
+    background-color: $bgRedSecond;
+  }
+}
+
+.active {
+  color: white;
+  background-color: $bgRedSecond;
+}
+
+.card_title__icon {
+  font-size: 24px;
+}

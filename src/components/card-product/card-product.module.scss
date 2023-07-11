@@ -1,0 +1,43 @@
+@import "@/styles/settings/__settings";
+
+.card_product {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  align-self: stretch;
+  @media (min-width: 768px) {
+    width: 220px;
+  }
+}
+
+.card_product__image {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.card_product__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card_product__title {
+  font-size: $subHead;
+}
+
+.card_product__desc {
+  font-size: $body;
+  font-weight: 300;
+}
+
+.card_product__price {
+  font-size: $subHead;
+  color: $bgRedSecond;
+}

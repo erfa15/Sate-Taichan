@@ -1,0 +1,39 @@
+@import "@/styles/settings/__settings";
+
+.list_products {
+  display: flex;
+  margin: 50px 0;
+  flex-direction: column;
+  gap: 50px;
+  @media (min-width: 1024px) {
+    margin: 100px 0;
+    flex-direction: row;
+  }
+}
+
+.list_products__shop {
+  @media (min-width: 1024px) {
+    flex: 5;
+  }
+}
+
+.list_products__types {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+
+.list_products__product {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  color: $bgGrey;
+  margin-top: 50px;
+  justify-content: flex-start;
+}

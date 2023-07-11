@@ -1,0 +1,66 @@
+@import "@/styles/settings/__settings";
+
+.popup_create {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  color: $bgGrey;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.popup_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.popup_form__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup_form__header {
+  font-weight: 600;
+  font-size: $body;
+  width: 50%;
+}
+
+.popup_content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 100px;
+  height: fit-content;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.5);
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+}
+
+.popup_content__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.popup_content__icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.popup_image {
+  object-fit: cover;
+  border-radius: 10px;
+}

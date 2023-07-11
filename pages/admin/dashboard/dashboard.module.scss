@@ -1,0 +1,15 @@
+@import "@/styles/settings/__settings";
+
+.admin_data {
+  color: $bgGrey;
+}
+
+.admin_data__data {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px 0;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+}

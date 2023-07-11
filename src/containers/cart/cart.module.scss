@@ -1,0 +1,50 @@
+@import "@/styles/settings/__settings";
+
+.cart {
+  flex: 2.3;
+  padding: 20px;
+  border-radius: 20px;
+  color: $bgGrey;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cart__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cart__icon {
+  font-size: 45px;
+  color: $bgGrey;
+}
+
+.cart__list_product {
+  height: 70vh;
+  color: black;
+  overflow-y: scroll;
+  margin: 30px 0;
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: none;
+    border-radius: 10px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: none;
+    border-radius: 10px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: none;
+  }
+}
+
+.cart__ordered {
+  margin-bottom: 20px;
+  font-size: $subHead;
+}

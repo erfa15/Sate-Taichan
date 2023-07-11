@@ -1,0 +1,45 @@
+@import "@/styles/settings/__settings";
+
+.alert {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: opacity 0.3s ease-in;
+  color: white;
+
+  position: absolute;
+  top: 50px;
+  z-index: 9999;
+  right: 100px;
+  width: 400px;
+  box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.2);
+}
+
+.alert__button {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.alert__success {
+  background-color: rgb(5, 180, 5);
+}
+
+.alert__error {
+  background-color: $bgRedSecond;
+}
+
+.alert__label {
+  font-weight: 600;
+  font-size: $subHead;
+  letter-spacing: 1px;
+}
+
+.none {
+  display: none;
+}

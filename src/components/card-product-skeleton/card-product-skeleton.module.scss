@@ -1,0 +1,17 @@
+@import "@/styles/settings/__settings";
+
+.card_product__skeleton {
+  width: 220px;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.card_product__title {
+  margin: 20px 0;
+}
+.card_product__desc {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,27 @@
+@import "@/styles/settings/_settings";
+
+.card_item__payment {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  @media (min-width: 768px) {
+    width: 350px;
+  }
+}
+
+.card_item__image {
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.card_item__title {
+  font-size: $subHead;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.card_item__desc {
+  font-size: $subHead;
+  font-weight: 300;
+}

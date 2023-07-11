@@ -1,0 +1,92 @@
+@import "@/styles/settings/__settings";
+
+.table_admin__container {
+  flex: 9;
+  overflow-x: auto;
+  color: $bgGrey;
+}
+
+.table_admin {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table_admin__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.table_admin__button {
+  font-size: $body;
+}
+
+.table_header__content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.table_head {
+  background-color: #f0f0f0;
+}
+
+.table_head th {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.table_value {
+  padding: 10px;
+}
+
+.table_row th {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.table_row td {
+  height: 50px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.table_row__controller {
+  text-align: center;
+  font-size: 25px;
+}
+
+.table_row__icon_edit {
+  color: green;
+}
+
+.table_row__icon_delete {
+  color: red;
+}
+
+.table_row:nth-child(odd) {
+  background-color: white;
+}
+
+.table_row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table_row:hover {
+  background-color: #e8e8e8;
+}
+
+.rotate_icon {
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

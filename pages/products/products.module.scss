@@ -1,0 +1,21 @@
+@import "@/styles/settings/__settings";
+
+.products__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.products__title {
+  font-size: $title;
+  color: $bgRedPrimary;
+  font-weight: 600;
+}
+
+.products__desc {
+  font-size: $body;
+  font-weight: 300;
+  color: $bgGrey;
+  text-align: center;
+}
