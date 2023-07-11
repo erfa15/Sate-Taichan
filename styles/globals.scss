@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Helvetica", "Roboto", sans-serif;
+}
+
+main {
+  padding: 0px 30px;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    max-width: 1240px;
+    margin: 100px auto;
+  }
+}

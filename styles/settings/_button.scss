@@ -1,0 +1,20 @@
+@mixin buttons($color, $backgroundColor) {
+  background-color: $backgroundColor;
+  color: $color;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-weight: 600;
+  &:disabled {
+    background-color: #969696;
+    box-shadow: none;
+    cursor: not-allowed;
+    color: white;
+    border: none;
+  }
+  &:not(:disabled):hover {
+    transition: 0.8s;
+    box-shadow: 0px 0px 10px rgba(208, 68, 68, 1);
+  }
+}
